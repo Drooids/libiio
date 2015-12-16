@@ -236,7 +236,9 @@ ssize_t iio_buffer_foreach_sample(struct iio_buffer *buffer,
 					processed += ret;
 			}
 
-			ptr += length;
+			if (i == dev->nb_channels - 1 || dev->channels[
+					i + 1]->index != chn->index)
+				ptr += length;
 		}
 	}
 	return processed;
@@ -267,6 +269,10 @@ void * iio_buffer_first(const struct iio_buffer *buffer,
 
 		/* Test if the buffer has samples for this channel */
 		if (!TEST_BIT(buffer->mask, cur->index))
+			continue;
+
+		/* Two channels with the same index use the same samples */
+		if (i > 0 && cur->index == buffer->dev->channels[i - 1]->index)
 			continue;
 
 		if (ptr % len)
