@@ -30,14 +30,14 @@ extern "C" {
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <sys/types.h>
 #include <stddef.h>
 
-#ifdef _MSC_BUILD
-/* Come on Microsoft, time to get some C99... */
+#ifdef __MBED__
+typedef int ssize_t;
+#else
 typedef long ssize_t;
-#define _SSIZE_T_DEFINED
 #endif
+#define _SSIZE_T_DEFINED
 
 #ifdef __GNUC__
 #ifndef __cnst
