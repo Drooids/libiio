@@ -20,9 +20,9 @@
 #undef _GNU_SOURCE
 
 #include "iio-config.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>

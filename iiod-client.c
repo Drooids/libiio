@@ -1,9 +1,9 @@
 #include "debug.h"
 #include "iiod-client.h"
+#include "iio-errno.h"
 #include "iio-lock.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <inttypes.h>
 #include <string.h>
 #include <stdio.h>

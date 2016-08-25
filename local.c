@@ -17,10 +17,10 @@
  * */
 
 #include "debug.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 
 #include <dirent.h>
-#include <errno.h>
 #include <limits.h>
 #include <poll.h>
 #include <stdbool.h>

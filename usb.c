@@ -16,12 +16,12 @@
  *
  * */
 
+#include "iio-errno.h"
 #include "iio-lock.h"
 #include "iio-private.h"
 #include "iiod-client.h"
 
 #include <ctype.h>
-#include <errno.h>
 #include <libusb-1.0/libusb.h>
 #include <stdbool.h>
 #include <string.h>

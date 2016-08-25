@@ -17,11 +17,11 @@
  * */
 
 #include "iio-config.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 #include "iio-lock.h"
 #include "iiod-client.h"
 
-#include <errno.h>
 #include <fcntl.h>
 #include <stdbool.h>
 #include <string.h>

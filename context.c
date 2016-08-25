@@ -18,9 +18,9 @@
 
 #include "debug.h"
 #include "iio-config.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <string.h>
 
 #ifdef _WIN32

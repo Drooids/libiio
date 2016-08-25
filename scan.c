@@ -16,9 +16,9 @@
  */
 
 #include "iio-config.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <stdbool.h>
 #include <string.h>
 

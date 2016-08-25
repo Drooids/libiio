@@ -17,9 +17,9 @@
  * */
 
 #include "debug.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <stdio.h>
 #include <string.h>
 

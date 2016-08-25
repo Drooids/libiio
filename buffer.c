@@ -16,9 +16,9 @@
  *
  * */
 
+#include "iio-errno.h"
 #include "iio-private.h"
 
-#include <errno.h>
 #include <string.h>
 
 struct callback_wrapper_data {

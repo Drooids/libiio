@@ -17,11 +17,11 @@
  * */
 
 #include "debug.h"
+#include "iio-errno.h"
 #include "iio-private.h"
 #include "iio-lock.h"
 #include "iiod-client.h"
 
-#include <errno.h>
 #include <libserialport.h>
 #include <stdio.h>
 #include <stdlib.h>
